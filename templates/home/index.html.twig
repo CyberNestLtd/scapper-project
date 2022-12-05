@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <div class="container">
+    <h1 class="text-center">Scrapped Pages Data</h1>
+
+    <table class="table table-striped table-hover table-bordered" id="scrap_page_table" style="width:100%":>
+      <thead>
+        <tr>
+          <th class="text-center">ID</th>
+          <th class="text-center">Title</th>
+          <th class="text-center">Description</th>
+          <th class="text-center">Date Added</th>
+          <th class="text-center">Last Updated</th>
+          <th class="text-center">Actions</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  {% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('home') }}
+  {% endblock %}
+{% endblock %}
+
+

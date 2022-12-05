@@ -1,0 +1,7 @@
+# home:
+#    path: /
+#    controller: App\Controller\HomeController::home
+
+# scrap_page_list:
+#   path: /scrap_page/list
+#   controller: App\Controller\ScrapPageController::list
